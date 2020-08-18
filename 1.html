@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>  <title>김계란TV-안녕친구들</title>
+  <head>  <title>김계란TV-안녕친구</title>
     <meta charset="utf-8">
-    <title></title>
+    <style>
+    .button{
+      padding: 100px 100px;
+      font-size: 70px;
+    }
+    #night{
+      background-color: black;
+      color: white;
+    }
+    #day{
+      background-color: white;
+      color: black;
+    }
+    </style>
   </head>
   <body>
     <h1><a href="index.html">김계란TV</a></h1>
+    <input id="night" class="button" type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+">
+    <input id="day" class="button" type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+">
     <ol>
       <li><a href="1.html">안녕친구들</a></li>
       <li><a href="2.html">쇠질</a></li>
